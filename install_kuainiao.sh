@@ -5,8 +5,8 @@ echo "Start download install package..."
 wget --no-check-certificate --tries=1 --timeout=15 https://raw.githubusercontent.com/koolshare/koolshare.github.io/mips_softerware_center/kuainiao/kuainiao.tar.gz -O kuainiao.tar.gz
 echo "Installing..."
 tar -zxf kuainiao.tar.gz
-chmod a+x /tmp/kuainiao/update.sh
-sh /tmp/kuainiao/update.sh
+chmod a+x /tmp/kuainiao/install.sh
+sh /tmp/kuainiao/install.sh
 rm -rf /tmp/install_kuainiao.sh >/dev/null 2>&1
 echo "Kuainiao install success!"
 echo "Use Kuainiao ,The browser to access:http://192.168.1.1/Module_kuainiao.asp"
