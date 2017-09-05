@@ -2,14 +2,14 @@
 
 cd /tmp
 echo "Start download install package..."
-wget --no-check-certificate --tries=1 --timeout=15 https://raw.githubusercontent.com/koolshare/koolshare.github.io/master/kuainiao/kuainiao.tar.gz -O kuainiao.tar.gz
+wget --no-check-certificate --tries=1 --timeout=15 https://raw.githubusercontent.com/koolshare/koolshare.github.io/mips_softerware_center/kuainiao/kuainiao.tar.gz -O kuainiao.tar.gz
 echo "Installing..."
 tar -zxf kuainiao.tar.gz
 chmod a+x /tmp/kuainiao/update.sh
 sh /tmp/kuainiao/update.sh
 rm -rf /tmp/install_kuainiao.sh >/dev/null 2>&1
 echo "Kuainiao install success!"
-echo "Use Kuainiao ,The browser to access:http://router.asus.com/Module_kuainiao.asp"
+echo "Use Kuainiao ,The browser to access:http://192.168.1.1/Module_kuainiao.asp"
 cd /koolshare/res
 wget --no-check-certificate --tries=1 --timeout=15 https://raw.githubusercontent.com/wangchll/xiaobao_add_kuainiao/master/software_center.png -O software_center.png
 wget --no-check-certificate --tries=1 --timeout=15 https://raw.githubusercontent.com/wangchll/xiaobao_add_kuainiao/master/Softerware_center.css -O Softerware_center.css
